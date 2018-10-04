@@ -1,0 +1,91 @@
+header {
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    position: relative;
+
+    .header-in {
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 115px;
+            height: 60%;
+            background: url('../../../assets/redrocklogo.png');
+            background-size: 100% 100%;
+        }
+
+        nav {
+            width: 600px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                height: 100%;
+            }
+
+            .link {
+                width: 80px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .link-in {
+                    width: 100%;
+                    height: 70%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #000;
+                    font-size: 16px;
+                    transition: all .3s;
+                }
+
+                .link-in-active {
+                    color: #618afb;
+                    border-bottom: solid 2px #618afb;
+                }
+
+                &:hover {
+                    .link-in {
+                        color: #618afb;
+                    }
+                }
+            }
+        }
+    }
+
+    .switcher {
+        display: flex;
+
+        .language {
+            font-size: 14px;
+            opacity: .4;
+            width: 30px;
+            height: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:first-child {
+                border-right: solid 1px #000;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .language-active {
+            opacity: 1;
+        }
+    }
+}
