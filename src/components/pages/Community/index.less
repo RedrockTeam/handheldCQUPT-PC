@@ -1,3 +1,87 @@
+@import '../../../App/animations.less';
+
 .community {
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    .community-container {
+        min-width: 1000px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .communityphone {
+            width: 340px;
+            height: 600px;
+            background: url('../../../assets/communityphone.png');
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.right-description {
+    width: 500px;
+    padding-bottom: 140px;
+
+    p {
+        margin: 0;
+    }
+
+    .right-title {
+        font-size: 40px;
+        animation-delay: .3s;
+    }
+
+    .right-subtitle {
+        font-size: 24px;
+        color: #646464;
+        padding-top: 25px;
+        animation-delay: .5s;
+    }
+}
+
+.circle1 {
+    background: #dcbcf7;
+    box-shadow: 0 0 13px 1px #c592f0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: relative;
+    left: 65px;
+    top: -145px;
+    animation: fadeFloat 3s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.circle2 {
+    background: #fec689;
+    box-shadow: 0 0 13px 1px #faa850;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    left: -35px;
+    top: -70px;
+    animation: fadeFloat 3.5s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.circle3 {
+    background: #5ef0ee;
+    box-shadow: 0 0 13px 1px #4dd6d4;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+    left: 280px;
+    top: -110px;
+    animation: fadeFloat 4s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }

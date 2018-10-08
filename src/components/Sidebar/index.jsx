@@ -8,7 +8,7 @@ import './index.less'
 export default class Query extends React.Component {
     render() {
         return (
-            <div className="sidebar">
+            <div className="sidebar fadeInLeft">
                 <div className={this.changeActiveClass(1)} onClick={() => this.props.onClicked(1)}>
                     <p>{store.language.sidebar.home}</p>
                 </div>

@@ -1,3 +1,24 @@
+@import '../../../App/animations.less';
+
 .query {
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    .query-container {
+        min-width: 1000px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .queryphone {
+            width: 340px;
+            height: 600px;
+            background: url('../../../assets/queryphone.png');
+            background-size: 100% 100%;
+        }
+    }
 }

@@ -1,3 +1,87 @@
 .index {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .index-container {
+        max-width: 1200px;
+        height: 700px;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .banner {
+            width: 680px;
+            height: 530px;
+            background: url('../../../assets/banner.png');
+            background-size: 100% 100%;
+            margin-top: 40px;
+        }
+
+        .right {
+            width: 400px;
+            display: flex;
+            flex-flow: column;
+
+            p {
+                text-align: right;
+                margin: 0;
+                user-select: none;
+            }
+
+            .title {
+                color: #5a7dff;
+                font-size: 60px;
+                line-height: 70px;
+            }
+
+            .sub-title {
+                color: #5a7dff;
+                font-size: 30px;
+                margin-top: 10px;
+                animation-delay: .25s;
+            }
+
+            .description {
+                color: #5a7dff;
+                font-size: 22px;
+                margin-top: 18px;
+                margin-bottom: 46px;
+                text-align: center;
+                animation-delay: .5s;
+                width: 450px;
+            }
+
+            .download-button {
+                width: 255px;
+                height: 60px;
+                outline: none;
+                border: none;
+                background: #4269fa;
+                color: #fff;
+                font-size: 27px;
+                border-radius: 8px;
+                float: right;
+                box-shadow: 0 4px 9px 1px rgba(136, 147, 255, 0.6);
+                animation-delay: .65s;
+                cursor: pointer;
+                transition: background .3s;
+
+                &:hover {
+                    background: #2753f3;
+                }
+            }
+        }
+    }
+
+    .arrow {
+        position: fixed;
+        bottom: 20px;
+        width: 60px;
+        height: 50px;
+        background: url('../../../assets/arrow.png');
+        background-size: 100% 100%;
+        opacity: .6;
+    }
 }

@@ -1,0 +1,153 @@
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-55px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rightInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes leftInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeFloat {
+    0% {
+        opacity: .3;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: .9;
+        transform: translateY(0);
+    }
+}
+
+@keyframes phoneRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes phoneLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.float {
+    animation: float 1s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s ease;
+    animation-fill-mode: backwards;
+}
+
+.fadeIn {
+    animation: fadeIn 3s;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 2s;
+    animation-fill-mode: backwards;
+}
+
+.fadeInDown {
+    animation: fadeInDown 2s;
+}
+
+.rightInLeft {
+    animation: rightInLeft 1s ease;
+    animation-fill-mode: backwards;
+}
+
+.leftInRight {
+    animation: leftInRight 1s ease;
+    animation-fill-mode: backwards;
+}
+
+.fadeFloat {
+    animation: fadeFloat 3s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.phoneRight {
+    animation: phoneRight 1.5s ease;
+}
+
+.phoneLeft {
+    animation: phoneLeft 1.5s ease;
+}

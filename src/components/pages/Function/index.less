@@ -1,3 +1,69 @@
 .function {
     background: #ebf0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    .function-container {
+        width: 1100px;
+        height: 680px;
+        display: flex;
+
+        p {
+            margin: 0;
+        }
+
+        .function-title {
+            font-size: 30px;
+            color: #000;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 300px;
+            animation-delay: 1s;
+        }
+
+        .function-description {
+            font-size: 22px;
+            color: #646464;
+            text-align: center;
+            width: 350px;
+            animation-delay: 1.2s;
+        }
+
+        > div {
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        .kebiaoicon {
+            width: 300px;
+            height: 230px;
+            background: url('../../../assets/kebiaochaxun.png');
+            background-size: 100% 100%;
+            margin-top: 100px;
+            animation-delay: .5s;
+        }
+
+        .kongjiaoshiicon {
+            width: 300px;
+            height: 190px;
+            background: url('../../../assets/kongjiaoshi.png');
+            background-size: 100% 100%;
+            margin-top: 220px;
+            animation-delay: .7s;
+        }
+
+        .meikeyueicon {
+            width: 300px;
+            height: 180px;
+            background: url('../../../assets/meikeyue.png');
+            background-size: 100% 100%;
+            margin-top: 150px;
+            animation-delay: .5s;
+        }
+    }
 }

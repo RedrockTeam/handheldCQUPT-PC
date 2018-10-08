@@ -9,7 +9,7 @@ import store from '../../../mobx/store';
 export default class Header extends React.Component {
     render() {
         return (
-            <header>
+            <header className="fadeInDown">
                 <div className="header-in">
                     <div className="logo">{this.props.match}</div>
                     <nav>

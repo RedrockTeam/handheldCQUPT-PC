@@ -1,3 +1,46 @@
+@import '../../../App/animations.less';
+
 .schoolbus {
     background: #ebf0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    .schoolbus-container {
+        min-width: 1000px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-description {
+            padding-bottom: 130px;
+
+            p {
+                margin: 0;
+            }
+
+            .left-title {
+                font-size: 40px;
+                width: 450px;
+                animation-delay: .3s;
+            }
+
+            .left-subtitle {
+                font-size: 24px;
+                color: #646464;
+                padding-top: 25px;
+                width: 600px;
+                animation-delay: .5s;
+            }
+        }
+
+        .schoolbusphone {
+            width: 340px;
+            height: 600px;
+            background: url('../../../assets/schoolbusphone.png');
+            background-size: 100% 100%;
+        }
+    }
 }
