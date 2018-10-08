@@ -6,6 +6,13 @@ const cn = {
         redrock: '红岩网校',
         aboutus: '关于我们'
     },
+    sidebar: {
+        home: '首页',
+        function: '基本功能',
+        community: '社区版聊',
+        schoolbus: '校车轨迹',
+        query: '一体化查询'
+    }
 }
 
 const en = {
@@ -16,9 +23,16 @@ const en = {
         redrock: 'Redrock',
         aboutus: 'About us'
     },
+    sidebar: {
+        home: 'Home',
+        function: 'Basic functions',
+        community: 'Community',
+        schoolbus: 'School bus positioning',
+        query: 'Integrated query'
+    }
 }
 
 export default {
     cn: cn,
-    en: en
+    en: Object.assign({}, cn, en)
 }

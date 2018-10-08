@@ -2,7 +2,9 @@ header {
     width: 100%;
     height: 55px;
     box-shadow: 0 1px 3px rgba(26,26,26,.1);
-    position: relative;
+    position: fixed;
+    background: #fff;
+    z-index: 5;
 
     .header-in {
         width: 1000px;
@@ -45,7 +47,7 @@ header {
                     align-items: center;
                     color: #000;
                     font-size: 16px;
-                    transition: all .3s;
+                    transition: color .3s;
                 }
 
                 .link-in-active {
@@ -67,25 +69,25 @@ header {
 
         .language {
             font-size: 14px;
-            opacity: .4;
             width: 30px;
             height: 14px;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            color: rgba(0, 0, 0, .4);
 
             &:first-child {
                 border-right: solid 1px #000;
             }
 
             &:hover {
-                opacity: 1;
+                color: #000;
             }
         }
 
         .language-active {
-            opacity: 1;
+            color: #000;
         }
     }
 }

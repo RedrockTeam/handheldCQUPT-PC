@@ -1,0 +1,38 @@
+.sidebar {
+    //width: 100px;
+    height: 100%;
+    padding-right: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    //background: yellow;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .side-link {
+        width: 90px;
+        height: 50px;
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        opacity: .5;
+        text-align: center;
+        transition: opacity .5s, font-size .5s;
+
+        &:hover {
+            font-size: 17px;
+            opacity: 1;
+        }
+    }
+
+    .side-link-active {
+        font-size: 17px;
+        opacity: 1;
+        border-bottom: solid 2px #618afb;
+    }
+}
