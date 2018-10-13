@@ -14,7 +14,12 @@ export default class Query extends React.Component {
         return (
             <div className={`query page ${this.props.className}`}>
                 <div className="query-container">
-                    <div className={`queryphone ${this.state.completed ? 'phoneRight' : ''}`}></div>
+                    <div className={`queryphone ${this.state.completed ? 'phoneRight' : ''}`}>
+                        <div className={`q1 ${this.state.completed ? 'qIn' : ''}`} style={{animationDelay: '2.2s'}}></div>
+                        <div className={`q2 ${this.state.completed ? 'qIn' : ''}`} style={{animationDelay: '1.6s'}}></div>
+                        <div className={`q3 ${this.state.completed ? 'qIn' : ''}`} style={{animationDelay: '.6s'}}></div>
+                        <div className={`q4 ${this.state.completed ? 'qIn' : ''}`} style={{animationDelay: '1s'}}></div>
+                    </div>
                     <div className="right-description">
                         <p className={`right-title ${this.state.completed ? 'rightInLeft' : ''}`}>{store.language.query.title}</p>
                         <p className={`right-subtitle ${this.state.completed ? 'rightInLeft' : ''}`}>{store.language.query.description}</p>

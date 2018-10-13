@@ -19,7 +19,7 @@ export default class Index extends React.Component {
                         <Link to="/download"><button className="download-button fadeInUp">{store.language.download}</button></Link>
                     </div>
                 </div>
-                <div className="arrow float"></div>
+                <div className="arrow float" onClick={() => this.props.onClicked(2)}></div>
             </div>
         )
     }

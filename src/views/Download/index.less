@@ -1,0 +1,96 @@
+.download {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .download-container {
+        width: 1000px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+            margin: 0;
+            user-select: none;
+        }
+
+        .andriod {
+            width: 330px;
+            height: 600px;
+        }
+
+        .ios {
+            width: 330px;
+            height: 600px;
+            //background: green;
+        }
+
+        .download-button {
+            width: 100%;
+            height: 60px;
+            outline: none;
+            border: none;
+            background: #567aff;
+            color: #fff;
+            font-size: 22px;
+            border-radius: 6px;
+            margin-top: 60px;
+            cursor: pointer;
+
+            &:hover {
+                background: #4067f7;
+            }
+        }
+
+        .version-title {
+            font-size: 28px;
+            margin-top: 30px;
+            animation-delay: .3s;
+        }
+
+        .version {
+            font-size: 16px;
+            color: #666666;
+            margin-top: 10px;
+            animation-delay: .5s;
+        }
+
+        .saoma {
+            font-size: 18px;
+            color: #666666;
+            margin-top: 30px;
+            animation-delay: .7s;
+        }
+    }
+}
+
+.mobile-container {
+    width: 100%;
+    height: 380px;
+    background: #fff;
+    box-shadow: 0 0px 14px 0px rgba(183, 183, 183, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.mobile-icon {
+    width: 110px;
+    height: 130px;
+    margin-top: 50px;
+}
+
+.andriod-icon {
+    background: url('../../assets/andriod.png');
+    background-size: 100% 100%;
+}
+
+.apple-icon {
+    background: url('../../assets/apple.png');
+    background-size: 100% 100%;
+}

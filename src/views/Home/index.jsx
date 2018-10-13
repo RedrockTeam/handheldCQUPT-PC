@@ -19,7 +19,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className="home">
-                <Index className={this.changeClass(1)}/>
+                <Index className={this.changeClass(1)} onClicked={this.changeIndex}/>
                 <Function className={this.changeClass(2)}/>
                 <Community className={this.changeClass(3)}/>
                 <Schoolbus className={this.changeClass(4)}/>
