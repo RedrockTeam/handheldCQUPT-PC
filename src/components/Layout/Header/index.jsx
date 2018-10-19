@@ -26,9 +26,11 @@ export default class Header extends React.Component {
             </header>
         )
     }
+
     changeEN = () => {
         store.changeLanguage('en')
     }
+    
     changeCN = () => {
         store.changeLanguage('cn')
     }
