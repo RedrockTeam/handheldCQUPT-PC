@@ -8,7 +8,7 @@ import './index.less'
 @observer
 export default class Download extends React.Component {
     state = {
-        andriodVersion: '4.4',
+        andriodVersion: '5.0.2',
         iosVersion: '3.6.3',
         andriodLink: 'http://hongyan.cqupt.edu.cn/app/com.mredrock.cyxbs.apk',
         iosLink: 'https://itunes.apple.com/cn/app/zhang-shang-zhong-you/id974026615'
